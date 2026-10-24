@@ -1,0 +1,49 @@
+{
+    "$schema": "terminal-organizer-vscode-schema:/v11/terminal-organizer-vscode.json",
+    "theme": "inkwell",
+    "active": "default",
+    "activateOnStartup": true,
+    "keepExistingTerminals": false,
+    "noClear": false,
+    "variable": {},
+    "environments": {},
+    "activeEnvironment": "",
+    "sessions": {
+        "default": [
+            {
+                "name": "Xacro",
+                "commands": [
+                    "echo 'Xacro terminal ready'"
+                ],
+                "icon": "file-code",
+                "focus": false
+            },
+            {
+                "name": "Build",
+                "commands": [
+                    "echo 'Build terminal ready'"
+                ],
+                "icon": "hammer",
+                "focus": false
+            },
+            [
+                {
+                    "name": "Gazebo",
+                    "commands": [
+                        "echo 'Gazebo terminal ready'"
+                    ],
+                    "icon": "play",
+                    "focus": false
+                },
+                {
+                    "name": "ROS Debug",
+                    "commands": [
+                        "echo 'ROS debugging terminal ready'"
+                    ],
+                    "icon": "bug",
+                    "focus": true
+                }
+            ]
+        ]
+    }
+}
