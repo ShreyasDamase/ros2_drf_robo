@@ -1,0 +1,36 @@
+-- The C compiler identification is Clang 21.1.8
+-- The CXX compiler identification is Clang 21.1.8
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.8.8 (/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.20.6 (/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description
+-- Install configuration: ""
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/ament_index/resource_index/package_run_dependencies/robo_description
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/ament_index/resource_index/parent_prefix_path/robo_description
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/ament_prefix_path.sh
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/ament_prefix_path.dsv
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/path.sh
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/path.dsv
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.bash
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.fish
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.sh
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.zsh
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.dsv
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.dsv
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/ament_index/resource_index/packages/robo_description
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/cmake/robo_descriptionConfig.cmake
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/cmake/robo_descriptionConfig-version.cmake
+-- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.xml

@@ -1,0 +1,163 @@
+[-1792935981447473152.000s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/colcon', 'build'][0m
+[-1792935981447473152.000s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=10, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x1063ae210>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x1063e9160>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x1063e9160>>, mixin_verb=('build',))[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extensions ['ignore', 'ignore_ament_install']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extension 'ignore'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extension 'ignore_ament_install'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extensions ['colcon_pkg']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extension 'colcon_pkg'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extensions ['colcon_meta']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extension 'colcon_meta'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extensions ['ros']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extension 'ros'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extensions ['cmake', 'python']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extension 'cmake'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extension 'python'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extensions ['python_setup_py']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator) by extension 'python_setup_py'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extensions ['ignore', 'ignore_ament_install']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extension 'ignore'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extension 'ignore_ament_install'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extensions ['colcon_pkg']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extension 'colcon_pkg'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extensions ['colcon_meta']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extension 'colcon_meta'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extensions ['ros']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extension 'ros'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extensions ['cmake', 'python']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extension 'cmake'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extension 'python'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extensions ['python_setup_py']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(Devastator/meshes) by extension 'python_setup_py'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robo_description) by extensions ['ignore', 'ignore_ament_install']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robo_description) by extension 'ignore'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robo_description) by extension 'ignore_ament_install'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robo_description) by extensions ['colcon_pkg']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robo_description) by extension 'colcon_pkg'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robo_description) by extensions ['colcon_meta']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robo_description) by extension 'colcon_meta'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robo_description) by extensions ['ros']
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/robo_description) by extension 'ros'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/robo_description' with type 'ros.ament_cmake' and name 'robo_description'[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[-1792935981447473152.000s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[-1792935981447473152.000s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robo_description' build argument 'cmake_args' from command line to 'None'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robo_description' build argument 'cmake_target' from command line to 'None'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robo_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robo_description' build argument 'cmake_clean_cache' from command line to 'False'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robo_description' build argument 'cmake_clean_first' from command line to 'False'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robo_description' build argument 'cmake_force_configure' from command line to 'False'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robo_description' build argument 'ament_cmake_args' from command line to 'None'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robo_description' build argument 'catkin_cmake_args' from command line to 'None'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'robo_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'robo_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description', 'merge_install': False, 'path': '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/src/robo_description', 'symlink_install': False, 'test_result_base': None}[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[-1792935981447473152.000s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/src/robo_description' with build type 'ament_cmake'
+[-1792935981447473152.000s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/src/robo_description'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/src/robo_description -DCMAKE_INSTALL_PREFIX=/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/src/robo_description -DCMAKE_INSTALL_PREFIX=/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake --build /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description -- -j10 -l10[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake --build /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description -- -j10 -l10[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake --install /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(robo_description)
+[-1792935981447473152.000s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake --install /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description' for CMake module files
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description' for CMake config files
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('robo_description', 'cmake_prefix_path')
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/hook/cmake_prefix_path.ps1'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/hook/cmake_prefix_path.dsv'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/hook/cmake_prefix_path.sh'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/lib'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/bin'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/lib/pkgconfig/robo_description.pc'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/lib/python3.14/site-packages'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/bin'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.ps1'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.dsv'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.sh'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.bash'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.zsh'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/colcon-core/packages/robo_description)
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(robo_description)
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description' for CMake module files
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description' for CMake config files
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('robo_description', 'cmake_prefix_path')
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/hook/cmake_prefix_path.ps1'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/hook/cmake_prefix_path.dsv'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/hook/cmake_prefix_path.sh'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/lib'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/bin'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/lib/pkgconfig/robo_description.pc'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/lib/python3.14/site-packages'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/bin'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.ps1'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.dsv'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.sh'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.bash'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.zsh'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/colcon-core/packages/robo_description)
+[-1792935981447473152.000s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/local_setup.ps1'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/_local_setup_util_ps1.py'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/setup.ps1'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/local_setup.sh'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/_local_setup_util_sh.py'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/setup.sh'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/local_setup.bash'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/setup.bash'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/local_setup.zsh'
+[-1792935981447473152.000s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/setup.zsh'

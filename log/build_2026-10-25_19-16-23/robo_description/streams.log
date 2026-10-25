@@ -1,0 +1,42 @@
+[0.014s] Invoking command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/src/robo_description -DCMAKE_INSTALL_PREFIX=/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description
+[0.903s] -- The C compiler identification is Clang 21.1.8
+[1.987s] -- The CXX compiler identification is Clang 21.1.8
+[2.015s] -- Detecting C compiler ABI info
+[2.188s] -- Detecting C compiler ABI info - done
+[2.225s] -- Check for working C compiler: /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cc - skipped
+[2.225s] -- Detecting C compile features
+[2.225s] -- Detecting C compile features - done
+[2.232s] -- Detecting CXX compiler ABI info
+[2.390s] -- Detecting CXX compiler ABI info - done
+[2.405s] -- Check for working CXX compiler: /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/c++ - skipped
+[2.405s] -- Detecting CXX compile features
+[2.405s] -- Detecting CXX compile features - done
+[2.422s] -- Found ament_cmake: 2.8.8 (/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/share/ament_cmake/cmake)
+[2.738s] -- Found ament_lint_auto: 0.20.6 (/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/share/ament_lint_auto/cmake)
+[2.861s] -- Added test 'lint_cmake' to check CMake code style
+[2.863s] -- Added test 'xmllint' to check XML markup files
+[2.865s] -- Configuring done (2.5s)
+[2.873s] -- Generating done (0.0s)
+[2.875s] -- Build files have been written to: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description
+[2.878s] Invoked command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/src/robo_description -DCMAKE_INSTALL_PREFIX=/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description
+[2.880s] Invoking command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake --build /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description -- -j10 -l10
+[2.933s] Invoked command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake --build /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description -- -j10 -l10
+[2.945s] Invoking command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake --install /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description
+[2.954s] -- Install configuration: ""
+[2.955s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/ament_index/resource_index/package_run_dependencies/robo_description
+[2.955s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/ament_index/resource_index/parent_prefix_path/robo_description
+[2.955s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/ament_prefix_path.sh
+[2.955s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/ament_prefix_path.dsv
+[2.955s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/path.sh
+[2.956s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/path.dsv
+[2.956s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.bash
+[2.956s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.fish
+[2.956s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.sh
+[2.957s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.zsh
+[2.957s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.dsv
+[2.957s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.dsv
+[2.957s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/ament_index/resource_index/packages/robo_description
+[2.957s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/cmake/robo_descriptionConfig.cmake
+[2.958s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/cmake/robo_descriptionConfig-version.cmake
+[2.958s] -- Installing: /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.xml
+[2.959s] Invoked command in '/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/shreyasdamase/ros2_lyrical/.pixi/envs/default CONDA_ENV_SHLVL_2_PIXI_PROMPT=(ros2_lyrical) PIXI_PROMPT=(ros2_lyrical) SHLVL=4 _=/usr/bin/env /Users/shreyasdamase/ros2_lyrical/.pixi/envs/default/bin/cmake --install /Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/build/robo_description
