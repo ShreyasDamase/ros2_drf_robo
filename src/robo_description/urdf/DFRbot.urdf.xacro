@@ -1,5 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<robot name="DFRbot">
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <material name="metal_black">
+        <color rgba="0.0 0.0 0.0 1.0" />
+    </material>
+    <material name="road_wheel">
+        <color rgba="0.957 0.839 0.576 1.0" />
+    </material>
+
     <link name="base_link">
         <inertial>
             <origin xyz="-0.08316536589651169 -0.019644178306641058 -0.007641892965444989"
@@ -13,6 +22,9 @@
             <geometry>
                 <mesh filename="../meshes/base_link.stl" scale="0.001 0.001 0.001" />
             </geometry>
+            <material name="metal_black" />
+
+
         </visual>
         <collision name="base_link_collision">
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
@@ -21,6 +33,8 @@
             </geometry>
         </collision>
     </link>
+
+
     <link name="right_drive_sprocket">
         <inertial>
             <origin xyz="4.041040893021375e-09 1.4369512937707497e-05 0.02455129089491322"

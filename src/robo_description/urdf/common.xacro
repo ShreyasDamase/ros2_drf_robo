@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <material name="base_link">
+        <color rgba="0.0 0.0 0.0 1.0" />
+    </material>
+    <material name="road_wheel">
+        <color rgba="0.957 0.839 0.576 1.0" />
+    </material>
+    <material name="sproket">
+        <color rgba="0.98 0.8 0.4 1.0" />
+    </material>
+    <material name="track_pad">
+        <color rgba="0.475 0.475 0.475 1.0" />
+    </material>
+
+</robot>
