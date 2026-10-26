@@ -10,7 +10,7 @@
     <xacro:include filename="common.xacro" />
     <xacro:include
         filename="sprocket.xacro" />
-    <xacro:include filename="track_path.xacro" />
+    <xacro:include filename="track_path_fusion.xacro" />
     <!-- args -->
     <!-- dimensions / properties -->
 
@@ -335,7 +335,7 @@
         joint_xyz="${ls_joint_xyz}" joint_rpy="${ls_joint_rpy}"
         inertial_xyz="${ls_inertial_xyz}" inertial_rpy="${ls_inertial_rpy}"
         mass="${ls_mass}"
-        ixx="${ls_ixx}" iyy="${rw_iyy}" izz="${rw_izz}"
+        ixx="${ls_ixx}" iyy="${ls_iyy}" izz="${ls_izz}"
         ixy="${ls_ixy}" iyz="${ls_iyz}" ixz="${ls_ixz}"
     />
 
@@ -378,7 +378,7 @@
         joint_xyz="${rs_joint_xyz}" joint_rpy="${rs_joint_rpy}"
         inertial_xyz="${rs_inertial_xyz}" inertial_rpy="${rs_inertial_rpy}"
         mass="${rs_mass}"
-        ixx="${rs_ixx}" iyy="${rw_iyy}" izz="${rw_izz}"
+        ixx="${rs_ixx}" iyy="${rs_iyy}" izz="${rs_izz}"
         ixy="${rs_ixy}" iyz="${rs_iyz}" ixz="${rs_ixz}" />
 
 
@@ -418,5 +418,9 @@
         ixx="${rw4_ixx}" iyy="${rw4_iyy}" izz="${rw4_izz}"
         ixy="${rw4_ixy}" iyz="${rw4_iyz}" ixz="${rw4_ixz}" />
 
-     <xacro:track_path parent="base_link" n="30" pitch="0.01" cx="-0.14" cz="0.08" />
+    <!-- Animated Track – Fusion 360 Sketch4 path (left side only for now).
+         One phase joint follows the existing left sprocket; the preview advances
+         the 49 pad visuals along the DXF contour without adding pad joints. -->
+    <xacro:track_path_fusion parent="base_link" prefix="left" lateral="0.067"
+        drive_joint="base_link_left_drive_sprocket_joint" phase_multiplier="1"/>
 </robot>

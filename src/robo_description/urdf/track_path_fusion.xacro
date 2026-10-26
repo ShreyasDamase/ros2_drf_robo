@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<!-- Fusion Sketch4 path: 49 pad visuals on one link, no per-pad links/joints. -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="track_path_fusion" params="parent prefix lateral:=0.067 flip:=4.712389 drive_joint phase_multiplier:=1">
+    <link name="${prefix}_track_carrier">
+      <visual name="${prefix}_pad_00_visual">
+        <origin xyz="${0.082847 + cos((2.902418 + flip)) * (-0.012097) + sin((2.902418 + flip)) * (-0.010542)} -0.000307 ${0.020664 - sin((2.902418 + flip)) * (-0.012097) + cos((2.902418 + flip)) * (-0.010542)}" rpy="${(2.902418 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_01_visual">
+        <origin xyz="${0.073133 + cos((2.902418 + flip)) * (-0.012097) + sin((2.902418 + flip)) * (-0.010542)} -0.000307 ${0.023033 - sin((2.902418 + flip)) * (-0.012097) + cos((2.902418 + flip)) * (-0.010542)}" rpy="${(2.902418 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_02_visual">
+        <origin xyz="${0.063418 + cos((2.902418 + flip)) * (-0.012097) + sin((2.902418 + flip)) * (-0.010542)} -0.000307 ${0.025401 - sin((2.902418 + flip)) * (-0.012097) + cos((2.902418 + flip)) * (-0.010542)}" rpy="${(2.902418 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_03_visual">
+        <origin xyz="${0.053704 + cos((2.902418 + flip)) * (-0.012097) + sin((2.902418 + flip)) * (-0.010542)} -0.000307 ${0.027770 - sin((2.902418 + flip)) * (-0.012097) + cos((2.902418 + flip)) * (-0.010542)}" rpy="${(2.902418 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_04_visual">
+        <origin xyz="${0.043990 + cos((2.902418 + flip)) * (-0.012097) + sin((2.902418 + flip)) * (-0.010542)} -0.000307 ${0.030139 - sin((2.902418 + flip)) * (-0.012097) + cos((2.902418 + flip)) * (-0.010542)}" rpy="${(2.902418 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_05_visual">
+        <origin xyz="${0.034276 + cos((2.902418 + flip)) * (-0.012097) + sin((2.902418 + flip)) * (-0.010542)} -0.000307 ${0.032508 - sin((2.902418 + flip)) * (-0.012097) + cos((2.902418 + flip)) * (-0.010542)}" rpy="${(2.902418 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_06_visual">
+        <origin xyz="${0.024561 + cos((2.902418 + flip)) * (-0.012097) + sin((2.902418 + flip)) * (-0.010542)} -0.000307 ${0.034876 - sin((2.902418 + flip)) * (-0.012097) + cos((2.902418 + flip)) * (-0.010542)}" rpy="${(2.902418 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_07_visual">
+        <origin xyz="${0.014847 + cos((2.902418 + flip)) * (-0.012097) + sin((2.902418 + flip)) * (-0.010542)} -0.000307 ${0.037245 - sin((2.902418 + flip)) * (-0.012097) + cos((2.902418 + flip)) * (-0.010542)}" rpy="${(2.902418 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_08_visual">
+        <origin xyz="${0.005133 + cos((2.902418 + flip)) * (-0.012097) + sin((2.902418 + flip)) * (-0.010542)} -0.000307 ${0.039614 - sin((2.902418 + flip)) * (-0.012097) + cos((2.902418 + flip)) * (-0.010542)}" rpy="${(2.902418 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_09_visual">
+        <origin xyz="${-0.004582 + cos((2.902418 + flip)) * (-0.012097) + sin((2.902418 + flip)) * (-0.010542)} -0.000307 ${0.041983 - sin((2.902418 + flip)) * (-0.012097) + cos((2.902418 + flip)) * (-0.010542)}" rpy="${(2.902418 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_10_visual">
+        <origin xyz="${-0.014296 + cos((2.902418 + flip)) * (-0.012097) + sin((2.902418 + flip)) * (-0.010542)} -0.000307 ${0.044351 - sin((2.902418 + flip)) * (-0.012097) + cos((2.902418 + flip)) * (-0.010542)}" rpy="${(2.902418 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_11_visual">
+        <origin xyz="${-0.024021 + cos((2.982943 + flip)) * (-0.012097) + sin((2.982943 + flip)) * (-0.010542)} -0.000307 ${0.046670 - sin((2.982943 + flip)) * (-0.012097) + cos((2.982943 + flip)) * (-0.010542)}" rpy="${(2.982943 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_12_visual">
+        <origin xyz="${-0.033732 + cos((3.615384 + flip)) * (-0.012097) + sin((3.615384 + flip)) * (-0.010542)} -0.000307 ${0.045127 - sin((3.615384 + flip)) * (-0.012097) + cos((3.615384 + flip)) * (-0.010542)}" rpy="${(3.615384 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_13_visual">
+        <origin xyz="${-0.041281 + cos((-2.355231 + flip)) * (-0.012097) + sin((-2.355231 + flip)) * (-0.010542)} -0.000307 ${0.038648 - sin((-2.355231 + flip)) * (-0.012097) + cos((-2.355231 + flip)) * (-0.010542)}" rpy="${(-2.355231 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_14_visual">
+        <origin xyz="${-0.048345 + cos((-2.355231 + flip)) * (-0.012097) + sin((-2.355231 + flip)) * (-0.010542)} -0.000307 ${0.031571 - sin((-2.355231 + flip)) * (-0.012097) + cos((-2.355231 + flip)) * (-0.010542)}" rpy="${(-2.355231 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_15_visual">
+        <origin xyz="${-0.055408 + cos((-2.355231 + flip)) * (-0.012097) + sin((-2.355231 + flip)) * (-0.010542)} -0.000307 ${0.024494 - sin((-2.355231 + flip)) * (-0.012097) + cos((-2.355231 + flip)) * (-0.010542)}" rpy="${(-2.355231 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_16_visual">
+        <origin xyz="${-0.062472 + cos((-2.355231 + flip)) * (-0.012097) + sin((-2.355231 + flip)) * (-0.010542)} -0.000307 ${0.017416 - sin((-2.355231 + flip)) * (-0.012097) + cos((-2.355231 + flip)) * (-0.010542)}" rpy="${(-2.355231 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_17_visual">
+        <origin xyz="${-0.069535 + cos((-2.355231 + flip)) * (-0.012097) + sin((-2.355231 + flip)) * (-0.010542)} -0.000307 ${0.010339 - sin((-2.355231 + flip)) * (-0.012097) + cos((-2.355231 + flip)) * (-0.010542)}" rpy="${(-2.355231 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_18_visual">
+        <origin xyz="${-0.076599 + cos((-2.355231 + flip)) * (-0.012097) + sin((-2.355231 + flip)) * (-0.010542)} -0.000307 ${0.003262 - sin((-2.355231 + flip)) * (-0.012097) + cos((-2.355231 + flip)) * (-0.010542)}" rpy="${(-2.355231 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_19_visual">
+        <origin xyz="${-0.083662 + cos((-2.355231 + flip)) * (-0.012097) + sin((-2.355231 + flip)) * (-0.010542)} -0.000307 ${-0.003815 - sin((-2.355231 + flip)) * (-0.012097) + cos((-2.355231 + flip)) * (-0.010542)}" rpy="${(-2.355231 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_20_visual">
+        <origin xyz="${-0.090726 + cos((-2.355231 + flip)) * (-0.012097) + sin((-2.355231 + flip)) * (-0.010542)} -0.000307 ${-0.010892 - sin((-2.355231 + flip)) * (-0.012097) + cos((-2.355231 + flip)) * (-0.010542)}" rpy="${(-2.355231 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_21_visual">
+        <origin xyz="${-0.097762 + cos((3.988948 + flip)) * (-0.012097) + sin((3.988948 + flip)) * (-0.010542)} -0.000307 ${-0.017996 - sin((3.988948 + flip)) * (-0.012097) + cos((3.988948 + flip)) * (-0.010542)}" rpy="${(3.988948 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_22_visual">
+        <origin xyz="${-0.102351 + cos((4.471962 + flip)) * (-0.012097) + sin((4.471962 + flip)) * (-0.010542)} -0.000307 ${-0.026770 - sin((4.471962 + flip)) * (-0.012097) + cos((4.471962 + flip)) * (-0.010542)}" rpy="${(4.471962 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_23_visual">
+        <origin xyz="${-0.102340 + cos((4.954977 + flip)) * (-0.012097) + sin((4.954977 + flip)) * (-0.010542)} -0.000307 ${-0.036672 - sin((4.954977 + flip)) * (-0.012097) + cos((4.954977 + flip)) * (-0.010542)}" rpy="${(4.954977 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_24_visual">
+        <origin xyz="${-0.097732 + cos((5.437991 + flip)) * (-0.012097) + sin((5.437991 + flip)) * (-0.010542)} -0.000307 ${-0.045436 - sin((5.437991 + flip)) * (-0.012097) + cos((5.437991 + flip)) * (-0.010542)}" rpy="${(5.437991 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_25_visual">
+        <origin xyz="${-0.089580 + cos((5.921006 + flip)) * (-0.012097) + sin((5.921006 + flip)) * (-0.010542)} -0.000307 ${-0.051057 - sin((5.921006 + flip)) * (-0.012097) + cos((5.921006 + flip)) * (-0.010542)}" rpy="${(5.921006 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_26_visual">
+        <origin xyz="${-0.079744 + cos((-0.003954 + flip)) * (-0.012097) + sin((-0.003954 + flip)) * (-0.010542)} -0.000307 ${-0.052410 - sin((-0.003954 + flip)) * (-0.012097) + cos((-0.003954 + flip)) * (-0.010542)}" rpy="${(-0.003954 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_27_visual">
+        <origin xyz="${-0.069745 + cos((-0.003954 + flip)) * (-0.012097) + sin((-0.003954 + flip)) * (-0.010542)} -0.000307 ${-0.052450 - sin((-0.003954 + flip)) * (-0.012097) + cos((-0.003954 + flip)) * (-0.010542)}" rpy="${(-0.003954 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_28_visual">
+        <origin xyz="${-0.059746 + cos((-0.003954 + flip)) * (-0.012097) + sin((-0.003954 + flip)) * (-0.010542)} -0.000307 ${-0.052490 - sin((-0.003954 + flip)) * (-0.012097) + cos((-0.003954 + flip)) * (-0.010542)}" rpy="${(-0.003954 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_29_visual">
+        <origin xyz="${-0.049748 + cos((-0.003954 + flip)) * (-0.012097) + sin((-0.003954 + flip)) * (-0.010542)} -0.000307 ${-0.052529 - sin((-0.003954 + flip)) * (-0.012097) + cos((-0.003954 + flip)) * (-0.010542)}" rpy="${(-0.003954 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_30_visual">
+        <origin xyz="${-0.039749 + cos((-0.003954 + flip)) * (-0.012097) + sin((-0.003954 + flip)) * (-0.010542)} -0.000307 ${-0.052569 - sin((-0.003954 + flip)) * (-0.012097) + cos((-0.003954 + flip)) * (-0.010542)}" rpy="${(-0.003954 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_31_visual">
+        <origin xyz="${-0.029750 + cos((-0.003954 + flip)) * (-0.012097) + sin((-0.003954 + flip)) * (-0.010542)} -0.000307 ${-0.052608 - sin((-0.003954 + flip)) * (-0.012097) + cos((-0.003954 + flip)) * (-0.010542)}" rpy="${(-0.003954 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_32_visual">
+        <origin xyz="${-0.019751 + cos((-0.003954 + flip)) * (-0.012097) + sin((-0.003954 + flip)) * (-0.010542)} -0.000307 ${-0.052648 - sin((-0.003954 + flip)) * (-0.012097) + cos((-0.003954 + flip)) * (-0.010542)}" rpy="${(-0.003954 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_33_visual">
+        <origin xyz="${-0.009754 + cos((0.019354 + flip)) * (-0.012097) + sin((0.019354 + flip)) * (-0.010542)} -0.000307 ${-0.052503 - sin((0.019354 + flip)) * (-0.012097) + cos((0.019354 + flip)) * (-0.010542)}" rpy="${(0.019354 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_34_visual">
+        <origin xyz="${0.000244 + cos((0.019354 + flip)) * (-0.012097) + sin((0.019354 + flip)) * (-0.010542)} -0.000307 ${-0.052310 - sin((0.019354 + flip)) * (-0.012097) + cos((0.019354 + flip)) * (-0.010542)}" rpy="${(0.019354 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_35_visual">
+        <origin xyz="${0.010241 + cos((0.019354 + flip)) * (-0.012097) + sin((0.019354 + flip)) * (-0.010542)} -0.000307 ${-0.052116 - sin((0.019354 + flip)) * (-0.012097) + cos((0.019354 + flip)) * (-0.010542)}" rpy="${(0.019354 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_36_visual">
+        <origin xyz="${0.020238 + cos((0.019354 + flip)) * (-0.012097) + sin((0.019354 + flip)) * (-0.010542)} -0.000307 ${-0.051923 - sin((0.019354 + flip)) * (-0.012097) + cos((0.019354 + flip)) * (-0.010542)}" rpy="${(0.019354 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_37_visual">
+        <origin xyz="${0.030235 + cos((0.019354 + flip)) * (-0.012097) + sin((0.019354 + flip)) * (-0.010542)} -0.000307 ${-0.051729 - sin((0.019354 + flip)) * (-0.012097) + cos((0.019354 + flip)) * (-0.010542)}" rpy="${(0.019354 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_38_visual">
+        <origin xyz="${0.040232 + cos((0.019354 + flip)) * (-0.012097) + sin((0.019354 + flip)) * (-0.010542)} -0.000307 ${-0.051536 - sin((0.019354 + flip)) * (-0.012097) + cos((0.019354 + flip)) * (-0.010542)}" rpy="${(0.019354 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_39_visual">
+        <origin xyz="${0.050101 + cos((0.334902 + flip)) * (-0.012097) + sin((0.334902 + flip)) * (-0.010542)} -0.000307 ${-0.050322 - sin((0.334902 + flip)) * (-0.012097) + cos((0.334902 + flip)) * (-0.010542)}" rpy="${(0.334902 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_40_visual">
+        <origin xyz="${0.058457 + cos((0.731782 + flip)) * (-0.012097) + sin((0.731782 + flip)) * (-0.010542)} -0.000307 ${-0.044982 - sin((0.731782 + flip)) * (-0.012097) + cos((0.731782 + flip)) * (-0.010542)}" rpy="${(0.731782 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_41_visual">
+        <origin xyz="${0.065896 + cos((0.731782 + flip)) * (-0.012097) + sin((0.731782 + flip)) * (-0.010542)} -0.000307 ${-0.038300 - sin((0.731782 + flip)) * (-0.012097) + cos((0.731782 + flip)) * (-0.010542)}" rpy="${(0.731782 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_42_visual">
+        <origin xyz="${0.073335 + cos((0.731782 + flip)) * (-0.012097) + sin((0.731782 + flip)) * (-0.010542)} -0.000307 ${-0.031619 - sin((0.731782 + flip)) * (-0.012097) + cos((0.731782 + flip)) * (-0.010542)}" rpy="${(0.731782 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_43_visual">
+        <origin xyz="${0.080774 + cos((0.731782 + flip)) * (-0.012097) + sin((0.731782 + flip)) * (-0.010542)} -0.000307 ${-0.024938 - sin((0.731782 + flip)) * (-0.012097) + cos((0.731782 + flip)) * (-0.010542)}" rpy="${(0.731782 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_44_visual">
+        <origin xyz="${0.088213 + cos((0.731782 + flip)) * (-0.012097) + sin((0.731782 + flip)) * (-0.010542)} -0.000307 ${-0.018257 - sin((0.731782 + flip)) * (-0.012097) + cos((0.731782 + flip)) * (-0.010542)}" rpy="${(0.731782 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_45_visual">
+        <origin xyz="${0.095189 + cos((0.979547 + flip)) * (-0.012097) + sin((0.979547 + flip)) * (-0.010542)} -0.000307 ${-0.011138 - sin((0.979547 + flip)) * (-0.012097) + cos((0.979547 + flip)) * (-0.010542)}" rpy="${(0.979547 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_46_visual">
+        <origin xyz="${0.098593 + cos((1.460265 + flip)) * (-0.012097) + sin((1.460265 + flip)) * (-0.010542)} -0.000307 ${-0.001838 - sin((1.460265 + flip)) * (-0.012097) + cos((1.460265 + flip)) * (-0.010542)}" rpy="${(1.460265 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_47_visual">
+        <origin xyz="${0.097311 + cos((1.940983 + flip)) * (-0.012097) + sin((1.940983 + flip)) * (-0.010542)} -0.000307 ${0.007981 - sin((1.940983 + flip)) * (-0.012097) + cos((1.940983 + flip)) * (-0.010542)}" rpy="${(1.940983 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+      <visual name="${prefix}_pad_48_visual">
+        <origin xyz="${0.091633 + cos((2.421700 + flip)) * (-0.012097) + sin((2.421700 + flip)) * (-0.010542)} -0.000307 ${0.016095 - sin((2.421700 + flip)) * (-0.012097) + cos((2.421700 + flip)) * (-0.010542)}" rpy="${(2.421700 + flip)} 0 1.570796"/>
+        <geometry><mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001"/></geometry>
+        <material name="track_pad_material"/>
+      </visual>
+    </link>
+    <joint name="${prefix}_track_mount_joint" type="fixed">
+      <parent link="${parent}"/><child link="${prefix}_track_carrier"/>
+      <origin xyz="0 ${lateral} 0" rpy="0 0 1.5707963"/>
+    </joint>
+    <link name="${prefix}_track_phase_link"/>
+    <joint name="${prefix}_track_spin" type="continuous">
+      <parent link="${parent}"/><child link="${prefix}_track_phase_link"/>
+      <axis xyz="0 1 0"/>
+      <mimic joint="${drive_joint}" multiplier="${phase_multiplier}" offset="0"/>
+    </joint>
+  </xacro:macro>
+</robot>
