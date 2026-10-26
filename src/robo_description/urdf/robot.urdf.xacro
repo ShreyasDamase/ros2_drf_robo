@@ -1,223 +1,330 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="DFRbot">
+
+
+    <!-- module -->
+    <xacro:include filename="base.xacro" />
+    <xacro:include
+        filename="road_wheel.xacro" />
+    <xacro:include filename="common.xacro" />
+    <xacro:include
+        filename="sprocket.xacro" />
+    <xacro:include filename="track_path.xacro" />
     <!-- args -->
     <!-- dimensions / properties -->
 
     <!-- Right Sprocket -->
     <xacro:property name="rs_xyz"
         value="-0.003683312846951794 0.033058568904078316 0.0958176724476687" />
-    <xacro:property name="rs_rpy"
+    <xacro:property
+        name="rs_rpy"
         value="6.078575305090689e-16 -2.6599521792892063e-14 -1.5707963267948963" />
-    <xacro:property name="rs_joint_xyz"
+    <xacro:property
+        name="rs_joint_xyz"
         value="-0.013663679999999827 -0.03474188000000015 0.006539760000000028" />
-    <xacro:property name="rs_joint_rpy"
+    <xacro:property
+        name="rs_joint_rpy"
         value="-1.5707963267948648 -7.092844299934858e-16 -1.5707963267948912" />
-    <xacro:property name="rs_inertial_xyz"
+    <xacro:property
+        name="rs_inertial_xyz"
         value="4.041040893021375e-09 1.4369512937707497e-05 0.02455129089491322" />
-    <xacro:property name="rs_inertial_rpy" value="1.2469549982861393e-62 -0.0 0.0" />
-    <xacro:property name="rs_mass" value="0.09152151104684562" />
-    <xacro:property name="rs_ixx" value="1.312943021186723e-05" />
+    <xacro:property
+        name="rs_inertial_rpy" value="1.2469549982861393e-62 -0.0 0.0" />
+    <xacro:property
+        name="rs_mass" value="0.09152151104684562" />
+    <xacro:property name="rs_ixx"
+        value="1.312943021186723e-05" />
     <xacro:property name="rs_iyy" value="1.3125134949870743e-05" />
-    <xacro:property name="rs_izz" value="1.102396481554491e-05" />
-    <xacro:property name="rs_ixy" value="-1.364702215166449e-15" />
-    <xacro:property name="rs_iyz" value="-1.0407888211876016e-09" />
-    <xacro:property name="rs_ixz" value="1.0267434169943288e-17" />
+    <xacro:property
+        name="rs_izz" value="1.102396481554491e-05" />
+    <xacro:property name="rs_ixy"
+        value="-1.364702215166449e-15" />
+    <xacro:property name="rs_iyz"
+        value="-1.0407888211876016e-09" />
+    <xacro:property name="rs_ixz"
+        value="1.0267434169943288e-17" />
 
     <!-- Left Sprocket -->
     <xacro:property name="ls_xyz"
         value="-0.003683312846951634 -0.03305856890407353 -0.06983656251086988" />
-    <xacro:property name="ls_rpy"
+    <xacro:property
+        name="ls_rpy"
         value="-5.065392549852166e-16 1.3345386098308293e-14 1.5707963267948963" />
-    <xacro:property name="ls_joint_xyz"
+    <xacro:property
+        name="ls_joint_xyz"
         value="-0.15266367999999983 -0.034741880000000995 0.006539760000000062" />
-    <xacro:property name="ls_joint_rpy"
+    <xacro:property
+        name="ls_joint_rpy"
         value="1.5707963267948937 -7.092844299934858e-16 -1.5707963267948912" />
-    <xacro:property name="ls_inertial_xyz"
+    <xacro:property
+        name="ls_inertial_xyz"
         value="4.041038526025887e-09 1.4366010886163183e-05 0.024551290914634587" />
-    <xacro:property name="ls_inertial_rpy" value="3.94430452610506e-31 -0.0 3.889384548663214e-62" />
-    <xacro:property name="ls_mass" value="0.09152151104684574" />
-    <xacro:property name="ls_ixx" value="1.3129430211868475e-05" />
+    <xacro:property
+        name="ls_inertial_rpy" value="3.94430452610506e-31 -0.0 3.889384548663214e-62" />
+    <xacro:property
+        name="ls_mass" value="0.09152151104684574" />
+    <xacro:property name="ls_ixx"
+        value="1.3129430211868475e-05" />
     <xacro:property name="ls_iyy" value="1.312513494987214e-05" />
-    <xacro:property name="ls_izz" value="1.1023964815545466e-05" />
-    <xacro:property name="ls_ixy" value="-1.364227876715987e-15" />
-    <xacro:property name="ls_iyz" value="-1.0407888212510166e-09" />
-    <xacro:property name="ls_ixz" value="1.0191184439849799e-17" />
+    <xacro:property
+        name="ls_izz" value="1.1023964815545466e-05" />
+    <xacro:property name="ls_ixy"
+        value="-1.364227876715987e-15" />
+    <xacro:property name="ls_iyz"
+        value="-1.0407888212510166e-09" />
+    <xacro:property name="ls_ixz"
+        value="1.0191184439849799e-17" />
 
 
     <!-- Left Road Wheel 1 -->
     <xacro:property name="lw1_xyz"
         value="0.07013659583942188 -0.10186776229084465 0.07010007530246995" />
-    <xacro:property name="lw1_rpy"
+    <xacro:property
+        name="lw1_rpy"
         value="1.5707963267948963 1.5707963267948881 0" />
     <xacro:property name="lw1_joint_xyz"
         value="-0.16696368000000036 0.06963123999999911 -0.024013450000000033" />
-    <xacro:property name="lw1_joint_rpy"
+    <xacro:property
+        name="lw1_joint_rpy"
         value="-1.570796326794895 -7.092844299934858e-16 -1.5707963267948912" />
-    <xacro:property name="lw1_inertial_xyz"
+    <xacro:property
+        name="lw1_inertial_xyz"
         value="2.8461329648621357e-09 3.064652016604441e-09 -0.00958088928816288" />
-    <xacro:property name="lw1_inertial_rpy"
+    <xacro:property
+        name="lw1_inertial_rpy"
         value="1.246954998286142e-62 -0.0 0.0" />
-    <xacro:property name="lw1_mass" value="0.11216702343401005" />
+    <xacro:property name="lw1_mass"
+        value="0.11216702343401005" />
     <xacro:property name="lw1_ixx" value="1.68783266885227e-05" />
-    <xacro:property name="lw1_iyy" value="1.6878326689367083e-05" />
-    <xacro:property name="lw1_izz" value="2.6216797929676883e-05" />
-    <xacro:property name="lw1_ixy" value="-1.3552527156068686e-18" />
-    <xacro:property name="lw1_iyz" value="-5.253236442911686e-19" />
-    <xacro:property name="lw1_ixz" value="6.441695322810937e-18" />
+    <xacro:property
+        name="lw1_iyy" value="1.6878326689367083e-05" />
+    <xacro:property name="lw1_izz"
+        value="2.6216797929676883e-05" />
+    <xacro:property name="lw1_ixy"
+        value="-1.3552527156068686e-18" />
+    <xacro:property name="lw1_iyz"
+        value="-5.253236442911686e-19" />
+    <xacro:property name="lw1_ixz"
+        value="6.441695322810937e-18" />
 
     <!-- Left Road Wheel 2 -->
     <xacro:property name="lw2_xyz"
         value="0.004355632642285125 0.09857161061744062 -0.07010007530246995" />
-    <xacro:property name="lw2_rpy"
+    <xacro:property
+        name="lw2_rpy"
         value="-1.570796326794897 -1.5707963267948883 0" />
     <xacro:property name="lw2_joint_xyz"
         value="-0.16546368000000009 0.035092679999999044 -0.055255860000000025" />
-    <xacro:property name="lw2_joint_rpy"
+    <xacro:property
+        name="lw2_joint_rpy"
         value="1.5707963267948981 -7.092844299934858e-16 -1.5707963267948912" />
-    <xacro:property name="lw2_inertial_xyz"
+    <xacro:property
+        name="lw2_inertial_xyz"
         value="4.519537069036517e-09 3.73821126053997e-09 0.009580889288162987" />
-    <xacro:property name="lw2_inertial_rpy"
+    <xacro:property
+        name="lw2_inertial_rpy"
         value="1.246954998286142e-62 -0.0 0.0" />
-    <xacro:property name="lw2_mass" value="0.11216702343401003" />
+    <xacro:property name="lw2_mass"
+        value="0.11216702343401003" />
     <xacro:property name="lw2_ixx" value="1.6878326688520098e-05" />
-    <xacro:property name="lw2_iyy" value="1.6878326689365782e-05" />
-    <xacro:property name="lw2_izz" value="2.6216797929678346e-05" />
-    <xacro:property name="lw2_ixy" value="2.7105054312136455e-19" />
-    <xacro:property name="lw2_iyz" value="-6.337438615397181e-19" />
-    <xacro:property name="lw2_ixz" value="-6.333275105562395e-18" />
+    <xacro:property
+        name="lw2_iyy" value="1.6878326689365782e-05" />
+    <xacro:property name="lw2_izz"
+        value="2.6216797929678346e-05" />
+    <xacro:property name="lw2_ixy"
+        value="2.7105054312136455e-19" />
+    <xacro:property name="lw2_iyz"
+        value="-6.337438615397181e-19" />
+    <xacro:property name="lw2_ixz"
+        value="-6.333275105562395e-18" />
 
     <!-- Left Road Wheel 3 -->
     <xacro:property name="lw3_xyz"
         value="-0.12222553924811966 0.026045975176996396 0.07010007530246949" />
-    <xacro:property name="lw3_rpy"
+    <xacro:property
+        name="lw3_rpy"
         value="1.5707963267948963 1.5707963267948917 0" />
     <xacro:property name="lw3_joint_xyz"
         value="-0.16796367999999942 -0.09050670000000123 -0.05623764999999994" />
-    <xacro:property name="lw3_joint_rpy"
+    <xacro:property
+        name="lw3_joint_rpy"
         value="-1.570796326794893 -7.092844299934858e-16 -1.5707963267948912" />
-    <xacro:property name="lw3_inertial_xyz"
+    <xacro:property
+        name="lw3_inertial_xyz"
         value="3.139740201163477e-10 -1.8478067342897475e-09 -0.00958088928816352" />
-    <xacro:property name="lw3_inertial_rpy"
+    <xacro:property
+        name="lw3_inertial_rpy"
         value="1.2469549982861418e-62 -0.0 0.0" />
-    <xacro:property name="lw3_mass" value="0.11216702343401011" />
+    <xacro:property name="lw3_mass"
+        value="0.11216702343401011" />
     <xacro:property name="lw3_ixx" value="1.68783266885214e-05" />
-    <xacro:property name="lw3_iyy" value="1.6878326689363614e-05" />
-    <xacro:property name="lw3_izz" value="2.6216797929676666e-05" />
-    <xacro:property name="lw3_ixy" value="-1.0842021724853126e-19" />
-    <xacro:property name="lw3_iyz" value="3.590493739155734e-20" />
+    <xacro:property
+        name="lw3_iyy" value="1.6878326689363614e-05" />
+    <xacro:property name="lw3_izz"
+        value="2.6216797929676666e-05" />
+    <xacro:property name="lw3_ixy"
+        value="-1.0842021724853126e-19" />
+    <xacro:property name="lw3_iyz"
+        value="3.590493739155734e-20" />
     <xacro:property name="lw3_ixz" value="4.988340699471015e-18" />
 
     <!-- Left Road Wheel 4 -->
-    <xacro:property name="lw4_xyz"
+    <xacro:property
+        name="lw4_xyz"
         value="-0.05801282256901676 -0.0387098860681079 0.07010007530246985" />
-    <xacro:property name="lw4_rpy"
+    <xacro:property
+        name="lw4_rpy"
         value="1.5707963267948963 1.5707963267948926 0" />
     <xacro:property name="lw4_joint_xyz"
         value="-0.16796367999999975 -0.026022410000001096 -0.05650921999999998" />
-    <xacro:property name="lw4_joint_rpy"
+    <xacro:property
+        name="lw4_joint_rpy"
         value="-1.570796326794893 -7.092844299934858e-16 -1.5707963267948912" />
-    <xacro:property name="lw4_inertial_xyz"
+    <xacro:property
+        name="lw4_inertial_xyz"
         value="-9.311303283965345e-10 1.4730904762672025e-09 -0.00958088928816327" />
-    <xacro:property name="lw4_inertial_rpy"
+    <xacro:property
+        name="lw4_inertial_rpy"
         value="1.2469549982861418e-62 -0.0 0.0" />
-    <xacro:property name="lw4_mass" value="0.11216702343401005" />
+    <xacro:property name="lw4_mass"
+        value="0.11216702343401005" />
     <xacro:property name="lw4_ixx" value="1.68783266885214e-05" />
-    <xacro:property name="lw4_iyy" value="1.687832668936535e-05" />
-    <xacro:property name="lw4_izz" value="2.6216797929680135e-05" />
-    <xacro:property name="lw4_ixy" value="2.168404344971221e-19" />
-    <xacro:property name="lw4_iyz" value="-1.8090497758856318e-19" />
-    <xacro:property name="lw4_ixz" value="5.524830873730051e-18" />
+    <xacro:property
+        name="lw4_iyy" value="1.687832668936535e-05" />
+    <xacro:property name="lw4_izz"
+        value="2.6216797929680135e-05" />
+    <xacro:property name="lw4_ixy"
+        value="2.168404344971221e-19" />
+    <xacro:property name="lw4_iyz"
+        value="-1.8090497758856318e-19" />
+    <xacro:property name="lw4_ixz"
+        value="5.524830873730051e-18" />
 
     <!-- Right Road Wheel 1 -->
     <xacro:property name="rw1_xyz"
         value="0.07013659583942143 -0.10186776229084438 0.09555415965607067" />
-    <xacro:property name="rw1_rpy"
+    <xacro:property
+        name="rw1_rpy"
         value="1.570796326794897 -1.57079632679489 0" />
     <xacro:property name="rw1_joint_xyz"
         value="0.0006363199999996732 0.06963124000000014 -0.02401345000000007" />
-    <xacro:property name="rw1_joint_rpy"
+    <xacro:property
+        name="rw1_joint_rpy"
         value="-1.5707963267948917 -7.092844299934858e-16 -1.5707963267948912" />
-    <xacro:property name="rw1_inertial_xyz"
+    <xacro:property
+        name="rw1_inertial_xyz"
         value="2.846133098088899e-09 3.06465188781857e-09 0.009580889268442597" />
-    <xacro:property name="rw1_inertial_rpy"
+    <xacro:property
+        name="rw1_inertial_rpy"
         value="1.2469549982861416e-62 -0.0 -7.778769097326429e-62" />
-    <xacro:property name="rw1_mass" value="0.11216702343400992" />
+    <xacro:property name="rw1_mass"
+        value="0.11216702343400992" />
     <xacro:property name="rw1_ixx" value="1.687832668851904e-05" />
-    <xacro:property name="rw1_iyy" value="1.687832668936459e-05" />
-    <xacro:property name="rw1_izz" value="2.621679792967558e-05" />
-    <xacro:property name="rw1_ixy" value="-7.0473141211560475e-19" />
-    <xacro:property name="rw1_iyz" value="-1.2869003604066369e-18" />
-    <xacro:property name="rw1_ixz" value="-5.185713141155922e-18" />
+    <xacro:property
+        name="rw1_iyy" value="1.687832668936459e-05" />
+    <xacro:property name="rw1_izz"
+        value="2.621679792967558e-05" />
+    <xacro:property name="rw1_ixy"
+        value="-7.0473141211560475e-19" />
+    <xacro:property name="rw1_iyz"
+        value="-1.2869003604066369e-18" />
+    <xacro:property name="rw1_ixz"
+        value="-5.185713141155922e-18" />
 
     <!-- Right Road Wheel 2 -->
     <xacro:property name="rw2_xyz"
         value="0.004355632642284655 0.09857161061744041 -0.09555415965607052" />
-    <xacro:property name="rw2_rpy"
+    <xacro:property
+        name="rw2_rpy"
         value="-1.5707963267948963 1.57079632679489 0" />
     <xacro:property name="rw2_joint_xyz"
         value="-0.0008636800000000794 0.03509268000000005 -0.055255860000000066" />
-    <xacro:property name="rw2_joint_rpy"
+    <xacro:property
+        name="rw2_joint_rpy"
         value="1.5707963267949014 -7.092844299934858e-16 -1.5707963267948912" />
-    <xacro:property name="rw2_inertial_xyz"
+    <xacro:property
+        name="rw2_inertial_xyz"
         value="4.51953711788633e-09 3.73821126053997e-09 -0.009580889268442328" />
-    <xacro:property name="rw2_inertial_rpy"
+    <xacro:property
+        name="rw2_inertial_rpy"
         value="1.2469549982861416e-62 -0.0 7.778769097326429e-62" />
-    <xacro:property name="rw2_mass" value="0.1121670234340099" />
+    <xacro:property name="rw2_mass"
+        value="0.1121670234340099" />
     <xacro:property name="rw2_ixx" value="1.687832668851755e-05" />
-    <xacro:property name="rw2_iyy" value="1.687832668936448e-05" />
-    <xacro:property name="rw2_izz" value="2.6216797929676395e-05" />
-    <xacro:property name="rw2_ixy" value="-3.5236570605775716e-19" />
-    <xacro:property name="rw2_iyz" value="-2.1678146255511007e-18" />
-    <xacro:property name="rw2_ixz" value="6.114061251346646e-18" />
+    <xacro:property
+        name="rw2_iyy" value="1.687832668936448e-05" />
+    <xacro:property name="rw2_izz"
+        value="2.6216797929676395e-05" />
+    <xacro:property name="rw2_ixy"
+        value="-3.5236570605775716e-19" />
+    <xacro:property name="rw2_iyz"
+        value="-2.1678146255511007e-18" />
+    <xacro:property name="rw2_ixz"
+        value="6.114061251346646e-18" />
 
     <!-- Right Road Wheel 3 -->
     <xacro:property name="rw3_xyz"
         value="-0.05801282256901665 -0.03870988606810794 0.09555415965606998" />
-    <xacro:property name="rw3_rpy"
+    <xacro:property
+        name="rw3_rpy"
         value="1.570796326794897 -1.5707963267948937 0" />
     <xacro:property name="rw3_joint_xyz"
         value="0.0016363200000002515 -0.026022410000000062 -0.05650922000000003" />
-    <xacro:property name="rw3_joint_rpy"
+    <xacro:property
+        name="rw3_joint_rpy"
         value="-1.5707963267948937 -7.092844299934858e-16 -1.5707963267948912" />
-    <xacro:property name="rw3_inertial_xyz"
+    <xacro:property
+        name="rw3_inertial_xyz"
         value="-9.311300042114113e-10 1.473090405212929e-09 0.009580889268442062" />
-    <xacro:property name="rw3_inertial_rpy"
+    <xacro:property
+        name="rw3_inertial_rpy"
         value="-3.94430452610506e-31 -0.0 7.778769097326429e-62" />
-    <xacro:property name="rw3_mass" value="0.11216702343401017" />
+    <xacro:property name="rw3_mass"
+        value="0.11216702343401017" />
     <xacro:property name="rw3_ixx" value="1.6878326688521128e-05" />
-    <xacro:property name="rw3_iyy" value="1.6878326689365498e-05" />
-    <xacro:property name="rw3_izz" value="2.621679792968008e-05" />
-    <xacro:property name="rw3_ixy" value="4.0657581468204303e-19" />
-    <xacro:property name="rw3_iyz" value="-3.777102651728527e-19" />
-    <xacro:property name="rw3_ixz" value="-6.823500060994002e-18" />
+    <xacro:property
+        name="rw3_iyy" value="1.6878326689365498e-05" />
+    <xacro:property name="rw3_izz"
+        value="2.621679792968008e-05" />
+    <xacro:property name="rw3_ixy"
+        value="4.0657581468204303e-19" />
+    <xacro:property name="rw3_iyz"
+        value="-3.777102651728527e-19" />
+    <xacro:property name="rw3_ixz"
+        value="-6.823500060994002e-18" />
 
     <!-- Right Road Wheel 4 -->
     <xacro:property name="rw4_xyz"
         value="-0.12222553924811948 0.026045975176995792 0.09555415965606973" />
-    <xacro:property name="rw4_rpy"
+    <xacro:property
+        name="rw4_rpy"
         value="1.5707963267948966 -1.570796326794858 0" />
     <xacro:property name="rw4_joint_xyz"
         value="0.0016363200000005975 -0.0905067000000002 -0.05623764999999998" />
-    <xacro:property name="rw4_joint_rpy"
+    <xacro:property
+        name="rw4_joint_rpy"
         value="-1.5707963267948937 -7.092844299934858e-16 -1.5707963267948912" />
-    <xacro:property name="rw4_inertial_xyz"
+    <xacro:property
+        name="rw4_inertial_xyz"
         value="3.1397393129850573e-10 -1.8478075070049727e-09 0.00958088926844195" />
-    <xacro:property name="rw4_inertial_rpy"
+    <xacro:property
+        name="rw4_inertial_rpy"
         value="-3.94430452610506e-31 -0.0 0.0" />
-    <xacro:property name="rw4_mass" value="0.11216702343400986" />
+    <xacro:property name="rw4_mass"
+        value="0.11216702343400986" />
     <xacro:property name="rw4_ixx" value="1.6878326688519393e-05" />
-    <xacro:property name="rw4_iyy" value="1.6878326689361337e-05" />
-    <xacro:property name="rw4_izz" value="2.621679792966886e-05" />
-    <xacro:property name="rw4_ixy" value="-9.757819552369856e-19" />
-    <xacro:property name="rw4_iyz" value="3.6338682925404645e-18" />
-    <xacro:property name="rw4_ixz" value="-1.027822913419722e-17" />
+    <xacro:property
+        name="rw4_iyy" value="1.6878326689361337e-05" />
+    <xacro:property name="rw4_izz"
+        value="2.621679792966886e-05" />
+    <xacro:property name="rw4_ixy"
+        value="-9.757819552369856e-19" />
+    <xacro:property name="rw4_iyz"
+        value="3.6338682925404645e-18" />
+    <xacro:property name="rw4_ixz"
+        value="-1.027822913419722e-17" />
 
-    <!-- module -->
-    <xacro:include filename="base.xacro" />
-    <xacro:include filename="road_wheel.xacro" />
-    <xacro:include filename="common.xacro" />
-    <xacro:include filename="sprocket.xacro" />
 
     <!-- assembly -->
     <xacro:base />
@@ -284,7 +391,8 @@
         ixx="${rw1_ixx}" iyy="${rw1_iyy}" izz="${rw1_izz}"
         ixy="${rw1_ixy}" iyz="${rw1_iyz}" ixz="${rw1_ixz}" />
 
-    <xacro:road_wheel side="right" index="2"
+    <xacro:road_wheel side="right"
+        index="2"
         xyz="${rw2_xyz}" rpy="${rw2_rpy}"
         joint_xyz="${rw2_joint_xyz}" joint_rpy="${rw2_joint_rpy}"
         inertial_xyz="${rw2_inertial_xyz}" inertial_rpy="${rw2_inertial_rpy}"
@@ -292,7 +400,8 @@
         ixx="${rw2_ixx}" iyy="${rw2_iyy}" izz="${rw2_izz}"
         ixy="${rw2_ixy}" iyz="${rw2_iyz}" ixz="${rw2_ixz}" />
 
-    <xacro:road_wheel side="right" index="3"
+    <xacro:road_wheel side="right"
+        index="3"
         xyz="${rw3_xyz}" rpy="${rw3_rpy}"
         joint_xyz="${rw3_joint_xyz}" joint_rpy="${rw3_joint_rpy}"
         inertial_xyz="${rw3_inertial_xyz}" inertial_rpy="${rw3_inertial_rpy}"
@@ -300,7 +409,8 @@
         ixx="${rw3_ixx}" iyy="${rw3_iyy}" izz="${rw3_izz}"
         ixy="${rw3_ixy}" iyz="${rw3_iyz}" ixz="${rw3_ixz}" />
 
-    <xacro:road_wheel side="right" index="4"
+    <xacro:road_wheel side="right"
+        index="4"
         xyz="${rw4_xyz}" rpy="${rw4_rpy}"
         joint_xyz="${rw4_joint_xyz}" joint_rpy="${rw4_joint_rpy}"
         inertial_xyz="${rw4_inertial_xyz}" inertial_rpy="${rw4_inertial_rpy}"
@@ -308,5 +418,5 @@
         ixx="${rw4_ixx}" iyy="${rw4_iyy}" izz="${rw4_izz}"
         ixy="${rw4_ixy}" iyz="${rw4_iyz}" ixz="${rw4_ixz}" />
 
-
+     <xacro:track_path parent="base_link" n="30" pitch="0.01" cx="-0.14" cz="0.08" />
 </robot>
