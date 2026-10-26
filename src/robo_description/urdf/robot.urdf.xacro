@@ -4,6 +4,47 @@
     <!-- args -->
     <!-- dimensions / properties -->
 
+    <!-- Right Sprocket -->
+    <xacro:property name="rs_xyz"
+        value="-0.003683312846951794 0.033058568904078316 0.0958176724476687" />
+    <xacro:property name="rs_rpy"
+        value="6.078575305090689e-16 -2.6599521792892063e-14 -1.5707963267948963" />
+    <xacro:property name="rs_joint_xyz"
+        value="-0.013663679999999827 -0.03474188000000015 0.006539760000000028" />
+    <xacro:property name="rs_joint_rpy"
+        value="-1.5707963267948648 -7.092844299934858e-16 -1.5707963267948912" />
+    <xacro:property name="rs_inertial_xyz"
+        value="4.041040893021375e-09 1.4369512937707497e-05 0.02455129089491322" />
+    <xacro:property name="rs_inertial_rpy" value="1.2469549982861393e-62 -0.0 0.0" />
+    <xacro:property name="rs_mass" value="0.09152151104684562" />
+    <xacro:property name="rs_ixx" value="1.312943021186723e-05" />
+    <xacro:property name="rs_iyy" value="1.3125134949870743e-05" />
+    <xacro:property name="rs_izz" value="1.102396481554491e-05" />
+    <xacro:property name="rs_ixy" value="-1.364702215166449e-15" />
+    <xacro:property name="rs_iyz" value="-1.0407888211876016e-09" />
+    <xacro:property name="rs_ixz" value="1.0267434169943288e-17" />
+
+    <!-- Left Sprocket -->
+    <xacro:property name="ls_xyz"
+        value="-0.003683312846951634 -0.03305856890407353 -0.06983656251086988" />
+    <xacro:property name="ls_rpy"
+        value="-5.065392549852166e-16 1.3345386098308293e-14 1.5707963267948963" />
+    <xacro:property name="ls_joint_xyz"
+        value="-0.15266367999999983 -0.034741880000000995 0.006539760000000062" />
+    <xacro:property name="ls_joint_rpy"
+        value="1.5707963267948937 -7.092844299934858e-16 -1.5707963267948912" />
+    <xacro:property name="ls_inertial_xyz"
+        value="4.041038526025887e-09 1.4366010886163183e-05 0.024551290914634587" />
+    <xacro:property name="ls_inertial_rpy" value="3.94430452610506e-31 -0.0 3.889384548663214e-62" />
+    <xacro:property name="ls_mass" value="0.09152151104684574" />
+    <xacro:property name="ls_ixx" value="1.3129430211868475e-05" />
+    <xacro:property name="ls_iyy" value="1.312513494987214e-05" />
+    <xacro:property name="ls_izz" value="1.1023964815545466e-05" />
+    <xacro:property name="ls_ixy" value="-1.364227876715987e-15" />
+    <xacro:property name="ls_iyz" value="-1.0407888212510166e-09" />
+    <xacro:property name="ls_ixz" value="1.0191184439849799e-17" />
+
+
     <!-- Left Road Wheel 1 -->
     <xacro:property name="lw1_xyz"
         value="0.07013659583942188 -0.10186776229084465 0.07010007530246995" />
@@ -176,9 +217,20 @@
     <xacro:include filename="base.xacro" />
     <xacro:include filename="road_wheel.xacro" />
     <xacro:include filename="common.xacro" />
+    <xacro:include filename="sprocket.xacro" />
 
     <!-- assembly -->
     <xacro:base />
+
+    <xacro:sprocket
+        side="left"
+        xyz="${ls_xyz}" rpy="${ls_rpy}"
+        joint_xyz="${ls_joint_xyz}" joint_rpy="${ls_joint_rpy}"
+        inertial_xyz="${ls_inertial_xyz}" inertial_rpy="${ls_inertial_rpy}"
+        mass="${ls_mass}"
+        ixx="${ls_ixx}" iyy="${rw_iyy}" izz="${rw_izz}"
+        ixy="${ls_ixy}" iyz="${ls_iyz}" ixz="${ls_ixz}"
+    />
 
     <!-- Left Road Wheels -->
     <xacro:road_wheel side="left" index="1"
@@ -213,6 +265,16 @@
         ixx="${lw4_ixx}" iyy="${lw4_iyy}" izz="${lw4_izz}"
         ixy="${lw4_ixy}" iyz="${lw4_iyz}" ixz="${lw4_ixz}" />
 
+    <xacro:sprocket
+        side="right"
+        xyz="${rs_xyz}" rpy="${rs_rpy}"
+        joint_xyz="${rs_joint_xyz}" joint_rpy="${rs_joint_rpy}"
+        inertial_xyz="${rs_inertial_xyz}" inertial_rpy="${rs_inertial_rpy}"
+        mass="${rs_mass}"
+        ixx="${rs_ixx}" iyy="${rw_iyy}" izz="${rw_izz}"
+        ixy="${rs_ixy}" iyz="${rs_iyz}" ixz="${rs_ixz}" />
+
+
     <!-- Right Road Wheels -->
     <xacro:road_wheel side="right" index="1"
         xyz="${rw1_xyz}" rpy="${rw1_rpy}"
@@ -245,5 +307,6 @@
         mass="${rw4_mass}"
         ixx="${rw4_ixx}" iyy="${rw4_iyy}" izz="${rw4_izz}"
         ixy="${rw4_ixy}" iyz="${rw4_iyz}" ixz="${rw4_ixz}" />
+
 
 </robot>

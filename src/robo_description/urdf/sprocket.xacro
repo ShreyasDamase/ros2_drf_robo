@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="sprocket"
+        params="side  xyz rpy joint_xyz joint_rpy inertial_xyz inertial_rpy mass ixx iyy izz ixy iyz ixz"
+    >
+        <link name="${side}_drive_sprocket">
+            <inertial>
+                <origin xyz="${inertial_xyz}"
+                    rpy="${inertial_rpy}" />
+                <mass value="${mass}" />
+                <inertia ixx="${ixx}" iyy="${iyy}"
+                    izz="${izz}" ixy="${ixy}"
+                    iyz="${iyz}" ixz="${ixz}" />
+            </inertial>
+            <visual name="${side}_drive_sprocket_visual">
+                <origin xyz="${xyz}"
+                    rpy="${rpy}" />
+                <geometry>
+                    <mesh filename="../meshes/${side}_drive_sprocket.stl" scale="0.001 0.001 0.001" />
+                </geometry>
+            </visual>
+            <collision name="${side}_drive_sprocket_collision">
+                <origin xyz="${xyz}"
+                    rpy="${rpy}" />
+                <geometry>
+                    <mesh filename="../meshes/${side}_drive_sprocket.stl" scale="0.001 0.001 0.001" />
+                </geometry>
+            </collision>
+        </link>
+
+
+        <joint name="base_link_${side}_drive_sprocket_joint" type="continuous">
+            <origin xyz="${joint_xyz}"
+                rpy="${joint_rpy}" />
+            <parent link="base_link" />
+            <child link="${side}_drive_sprocket" />
+            <axis xyz="1.2645626016280148e-31 2.700138880472324e-15 -0.9999999999999999" />
+        </joint>
+    </xacro:macro>
+</robot>
