@@ -1,0 +1,16 @@
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/ament_index/resource_index/package_run_dependencies/robo_description
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/ament_index/resource_index/parent_prefix_path/robo_description
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/ament_prefix_path.sh
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/ament_prefix_path.dsv
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/path.sh
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/environment/path.dsv
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.bash
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.fish
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.sh
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.zsh
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/local_setup.dsv
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.dsv
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/ament_index/resource_index/packages/robo_description
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/cmake/robo_descriptionConfig.cmake
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/cmake/robo_descriptionConfig-version.cmake
+/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/install/robo_description/share/robo_description/package.xml

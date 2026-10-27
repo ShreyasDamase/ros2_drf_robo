@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="track_pad.xacro" />
+
+    <!-- recursive: places pad i, then i+1 -->
+    <xacro:macro name="track_pads" params="i n r flip">
+        <xacro:if value="${i &lt; n}">
+            <xacro:track_pad name="track_pad_${i}" />
+            <joint name="track_pad_${i}_joint" type="fixed">
+                <parent link="track_carrier" />
+                <child link="track_pad_${i}" />
+                <origin xyz="${r*cos(2*pi*i/n)} 0 ${r*sin(2*pi*i/n)}"
+                    rpy="0 ${-(2*pi*i/n + pi/2) + flip} 0" />
+            </joint>
+            <xacro:track_pads i="${i+1}" n="${n}" r="${r}" flip="${flip}" />
+        </xacro:if>
+    </xacro:macro>
+
+    <xacro:macro name="track_path"
+        params="parent:=base_link n:=30 pitch:=0.015 cx:=0.06 cy:=0 cz:=0.0 flip:=4.712389">
+        <link name="track_carrier" />
+        <joint name="track_spin" type="continuous">
+            <parent link="${parent}" />
+            <child link="track_carrier" />
+            <origin xyz="${cx} ${cy} ${cz}" rpy="0 0 1.570796  " />
+            <axis xyz="0 1 0" />
+        </joint>
+        <xacro:track_pads i="0" n="${n}" r="${n*pitch/(2*pi)}" flip="${flip}" />
+    </xacro:macro>
+</robot>

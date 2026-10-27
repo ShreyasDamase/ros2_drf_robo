@@ -1,0 +1,11 @@
+{
+  "cmake.sourceDirectory": "/Users/shreyasdamase/Terminator/ROS2_PROJECTS/ros2_ devastator_robo/src/robo_description",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.associations": {
+    "*.xacro": "xml"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  }
+}

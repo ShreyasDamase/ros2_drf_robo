@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="track_pad" params="name">
+        <link name="${name}">
+            <inertial>
+                <origin xyz="0 0.012  0.035" rpy="0 0 1.570796" />
+                <mass value="0.00291" />
+                <inertia ixx="2.4361e-08" ixy="0" ixz="-4e-12"
+                    iyy="2.22143e-07" iyz="9.54e-10" izz="2.01571e-07" />
+            </inertial>
+            <visual name="${name}_visual">
+                <origin xyz="-0.012097 -0.000307 -0.010542" rpy="0 0 1.570796" />
+                <geometry>
+                    <mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001" />
+                </geometry>
+                <material name="track_pad_material" />
+            </visual>
+            <collision name="${name}_collision">
+                <origin xyz="-0.012097 -0.000307 -0.010542" rpy="0 0 1.570796" />
+                <geometry>
+                    <mesh filename="../meshes/track_pad.stl" scale="0.001 0.001 0.001" />
+                </geometry>
+            </collision>
+        </link>
+    </xacro:macro>
+</robot>
