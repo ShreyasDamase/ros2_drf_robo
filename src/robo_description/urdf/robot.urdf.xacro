@@ -421,6 +421,6 @@
     <!-- Animated Track – Fusion 360 Sketch4 path (left side only for now).
          One phase joint follows the existing left sprocket; the preview advances
          the 49 pad visuals along the DXF contour without adding pad joints. -->
-    <xacro:track_path_fusion parent="base_link" prefix="left" lateral="0.067"
+    <xacro:track_path_fusion parent="base_link" prefix="left" lateral="0.0"
         drive_joint="base_link_left_drive_sprocket_joint" phase_multiplier="1"/>
 </robot>

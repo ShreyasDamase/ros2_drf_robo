@@ -251,13 +251,12 @@
     </link>
     <joint name="${prefix}_track_mount_joint" type="fixed">
       <parent link="${parent}"/><child link="${prefix}_track_carrier"/>
-      <origin xyz="0 ${lateral} 0" rpy="0 0 1.5707963"/>
+      <origin xyz="0.021 ${lateral} -0.014" rpy="0 0 1.5707963"/>
     </joint>
     <link name="${prefix}_track_phase_link"/>
     <joint name="${prefix}_track_spin" type="continuous">
       <parent link="${parent}"/><child link="${prefix}_track_phase_link"/>
       <axis xyz="0 1 0"/>
-      <mimic joint="${drive_joint}" multiplier="${phase_multiplier}" offset="0"/>
     </joint>
   </xacro:macro>
 </robot>
